@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Hello World</title>
+
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+
+</head>
+<body>
+<section id="menu">
+ <div class="container-fluid" >
+   <nav class="navbar navbar-default navbar-fixed-top " >
+     <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="main.html">
+          <div class="logo" >DaVeS
+          </div></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">HOME</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle collapse" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Communication</a></li>
+            <li><a href="#">IT Services</a></li>
+            <li><a href="#">Web Devlopment</a></li>
+             <li><a href="#">Military</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Our Portfolio</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+    </section>
+    <section id="bg" class="text-center" >
+
+        <div class="container-fluid"  >
+            <div class="background">
+                <div class="transbox">
+                    <h1>CAPTURE</h1>
+                   
+                </div>
+                </div>
+
+        </div>
+    </section>
+    <section id="about" class="text-center">
+        <div class="container">
+            <div class="about-top">
+
+                <h2> About Us</h2>
+                <p>
+                    If you want to be a technically great photographer, then there is one thing and one thing only that will get you to that point.</p></div>
+           <div class="about-content">
+               <div class="row">
+                  <div class="col-lg-3">
+                      <div class="about-icon ">
+                                <i class="fa fa-desktop "></i>
+                                <h2>Web Design</h2>
+                                <p> Website builder which will help you create the perfect website design for them</p>
+                  </div>
+                  </div>
+                  <div class="col-lg-3">
+                      <div class="about-icon ">
+                                <i class="fa fa-clipboard "></i>
+                                <h2>E-Commerce</h2>
+                                <p> Website builder which will help you create the perfect website design for them</p>
+                  </div>
+                  </div>
+                  <div class="col-lg-3">
+                      <div class="about-icon ">
+                                <i class="fa fa-windows "></i>
+                                <h2>Graphics</h2>
+                                <p> Website builder which will help you create the perfect website design for them</p>
+                  </div>
+                  </div>
+                  <div class="col-lg-3">
+                      <div class="about-icon ">
+                                <i class="fa fa-facebook-square "></i>
+                                <h2>Stacks</h2>
+                                <p> Website builder which will help you create the perfect website design for them</p>
+                  </div>
+                  </div>             
+            </div>
+        </div>
+    </section>
+    <section id="services" class="text-center">
+        <div class="container">
+            <div class="service-top">
+
+                <h2> Services</h2>
+               
+                <p>
+                    If you want to be a technically great photographer, then there is one thing and one thing only that will get you to that point.
+          </p> <hr>
+          </div>
+
+
+          <div class="service-content">
+               <div class="row">
+                  <div class="col-lg-3">
+                      <div class="service-icon ">
+                                <img src="images/01.jpg" alt="mngr"/>
+                                <div class="service-overlay"></div>
+                                <div class="links">
+                                    <i class="fa fa-google-plus-circle"></i>
+                                    <i class="fa fa-link"></i>
+
+                                </div>
+                  </div>
+                  </div>
+                  <div class="col-lg-3">
+                      <div class="service-icon ">
+                                 <img src="images/02.jpg" alt=" tr mngr"/>
+                                 <div class="service-overlay"></div>
+                                <div class="links">
+                                    <i class="fa fa-google-plus-circle"></i>
+                                    <i class="fa fa-link"></i>
+
+                                </div>
+                  </div>
+                  </div>
+                  <div class="col-lg-3">
+                      <div class="service-icon ">
+                                 <img src="images/03.jpg" alt="hr mngr"/>
+                                 <div class="service-overlay"></div>
+                                <div class="links">
+                                    <i class="fa fa-google-plus-circle"></i>
+                                    <i class="fa fa-link"></i>
+
+                                </div>
+                  </div>
+                  </div>
+                  <div class="col-lg-3">
+                      <div class="service-icon ">
+                                <img src="images/04.jpg" alt=" leda mngr"/>
+                                <div class="service-overlay"></div>
+                                <div class="links">
+                                    <i class="fa fa-google-plus-circle"></i>
+                                    <i class="fa fa-link"></i>
+
+                                </div>
+                  </div>
+                  </div>             
+            </div>
+
+        </div>
+    </section>
+    <section id="team" class="text-center" >
+        <div class="container">
+        <div class="team-our">
+            <h1>Our Team</h1></div>
+<p>Effective teams don't just happen. It's up to the manager or team leader to set the stage for success. That includes guiding work teams toward the establishment of team goals and, ultimately, to a positive outcome. 
+    Here are some key points that can help you along the way.</p>
+    <hr>
+<div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">show all</button>
+                <button class="button" data-filter=".metal">Management</button>
+                <button class="button" data-filter=".transition">Technical</button>
+                <button class="button" data-filter=".post-transition">Human Resource</button>
+</div>
+
+
+
+<div class="grid">
+    <div class="row">
+            <div class="element-item transition metal col-lg-3 " data-category="transition">
+                <img src="images/01.jpg" alt="" />               <div class="team-overlay"></div>
+                 </div>
+            <div class="element-item metalloid metal col-lg-3  " data-category="metalloid">
+                <img src="images/02.jpg" alt="" />
+            </div>
+            <div class="element-item post-transition metal col-lg-3 " data-category="post-transition">
+                <img src="images/03.jpg" alt="" />
+            </div>
+            <div class="element-item post-transition  col-lg-3" data-category="post-transition">
+                <img src="images/04.jpg" alt="" />
+            </div>
+            <div class="element-item transition metal  col-lg-3" data-category="transition">
+                <img src="images/05.jpg" alt="" />
+            </div>
+                       
+            </div>
+</div>
+</div>
+       </div>
+    </section>
+<section id="pricing" class="text-center">
+      <div class="container">
+      <div class="pricing-top">
+          
+          <h2>Our pricing</h2>
+          <p>A fair and reasonable price is the price point for a good or service that is fair
+               to both parties involved in the transaction.</p>
+               <hr>
+      </div>
+
+          <div class="row">
+              <div class="col-lg-3">
+                  <div class="price-circle">
+                                    <div class="pricing-top2">
+                                    <p><sup >$</sup><em >55</em>/MO</p>
+                                    <span>BASIC</span>
+                                </div>
+                  <ul>
+                  <li>BandWith</li>
+                  <li>MegaByte</li>
+                  <li>GigaByte</li>
+                  <li>TeraByte</li>                  
+                  </ul>
+                 <div class="btn">ORDER NOW   </div>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                  <div class="price-circle">
+                                    <div class="pricing-top2">
+                                    <p><sup >$</sup><em >55</em>/MO</p>
+                                    <span>BASIC</span>
+                                </div>
+                  <ul>
+                  <li>BandWith</li>
+                  <li>MegaByte</li>
+                  <li>GigaByte</li>
+                  <li>TeraByte</li>                  
+                  </ul>
+                 <div class="btn">ORDER NOW   </div>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                  <div class="price-circle">
+                                    <div class="pricing-top2">
+                                    <p><sup >$</sup><em >55</em>/MO</p>
+                                    <span>BASIC</span>
+                                </div>
+                  <ul>
+                  <li>BandWith</li>
+                  <li>MegaByte</li>
+                  <li>GigaByte</li>
+                  <li>TeraByte</li>                  
+                  </ul>
+                 <div class="btn">ORDER NOW   </div>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                  <div class="price-circle">
+                                    <div class="pricing-top2">
+                                    <p><sup >$</sup><em >55</em>/MO</p>
+                                    <span>BASIC</span>
+                                </div>
+                  <ul>
+                  <li>BandWith</li>
+                  <li>MegaByte</li>
+                  <li>GigaByte</li>
+                  <li>TeraByte</li>                  
+                  </ul>
+                 <div class="btn">ORDER NOW   </div>
+                 
+                  </div>
+              </div>
+          </div>
+
+    </div>
+    </section>
+
+
+
+<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/isotope.min.js"></script>
+<script type="text/javascript" src="js/isotope.function.js"></script>
+
+
+
+
+
+</body>
+</html>
